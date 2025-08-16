@@ -80,7 +80,8 @@ function ControleMenu({ menuRef, zekrId }: { menuRef?: any; zekrId: number }) {
     JSON.parse(localStorage.getItem("Azkaree") || "[]") as zekrTypes[]
   );
 
-  function handleDelete() {
+  function handleDelete(e: React.MouseEvent) {
+    e.stopPropagation();
     setZekrData((prev: any) => {
       const filteredData = prev.filter((ele: zekrTypes) => ele.id !== zekrId);
       setSharedValue(filteredData);
@@ -99,7 +100,7 @@ function ControleMenu({ menuRef, zekrId }: { menuRef?: any; zekrId: number }) {
     >
       <MyButton
         styles="hover:text-red-500 text-2xl"
-        onClick={() => handleDelete()}
+        onClick={(e) => handleDelete(e)}
         text={<AiOutlineDelete />}
       />
     </div>

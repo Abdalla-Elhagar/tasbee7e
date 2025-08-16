@@ -44,7 +44,7 @@ const [count, setCount] = useState<number>(zekr?.count || 0);
   }, [zekrData]);
   return (
     <main className="bg-black flex justify-center items-center h-screen">
-      <div className="container mx-auto max-w-full md:max-w-[600px] h-lvh bg-neutral-800 flex flex-col items-center justify-between p-4 pt-6 gap-4">
+      <div className="container mx-auto max-w-full md:max-w-[600px] h-screen md:h-[600px] bg-neutral-800 flex flex-col items-center justify-between p-4 pt-6 gap-4">
         <div className="name text-2xl font-semibold">{zekr?.name}</div>
         <div
           style={{ whiteSpace: "pre-line", marginBottom: "10px" }}
