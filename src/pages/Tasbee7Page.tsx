@@ -20,7 +20,7 @@ const zekr = zekrData.filter((z:zekrTypes) => z.id === id)[0]
   function handleTasbee7() {
     () => {
     if ("vibrate" in navigator) {
-      navigator.vibrate(200);
+      navigator.vibrate([200, 100, 200]);
     } else {
       alert("جهازك لا يدعم الاهتزاز");
     }
