@@ -26,16 +26,18 @@ You can try the application here: [Tasbee7e on Vercel](https://tasbee7.vercel.ap
 - **Vite** – For fast development and build tooling.
 
 ## 📂 Project Structure
-├── public # Static assets
+
+├── public              # Static assets
 ├── src
-│ ├── components # Reusable components
-│ ├── pages # Application pages (Home, Add Zikr, Zikr Details)
-│ ├── App.tsx # Root component with routes
-│ └── main.tsx # Entry point
-├── index.html # Main HTML file
-├── package.json # Project dependencies and scripts
-├── tsconfig.json # TypeScript configuration
-└── vite.config.ts # Vite configuration
+│   ├── components      # Reusable components
+│   ├── pages           # Application pages (Home, Add Zikr, Zikr Details)
+│   ├── App.tsx         # Root component with routes
+│   ├── main.tsx        # Entry point
+│   └── assets          # Images, icons, and other static resources
+├── index.html          # Main HTML file
+├── package.json        # Project dependencies and scripts
+├── tsconfig.json       # TypeScript configuration
+└── vite.config.ts      # Vite configuration
 
 
 ## 📦 Installation & Setup
