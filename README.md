@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+# Tasbee7e Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and modern web application that allows users to add, view, and count **azkar (remembrances)**.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can try the application here: [Tasbee7e on Vercel](https://tasbee7.vercel.app)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Add new azkar with a name and description.
+- Display azkar as cards with details.
+- Navigate to a zikr details page showing its name, description, and counter.
+- Increment zikr count with a counter button.
+- Reset zikr count to start again.
+- Welcome message displayed if no azkar are added yet.
+- Data (azkar, descriptions, counters) stored in **Local Storage** for persistence.
+- Simple and clean UI with responsive design.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Built With
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **React** – Component-based frontend library.
+- **TypeScript** – For type safety and better developer experience.
+- **Tailwind CSS** – For modern and responsive styling.
+- **React Router** – For smooth navigation between pages.
+- **Vite** – For fast development and build tooling.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Project Structure
+├── public              # Static assets
+├── src
+│   ├── components      # Reusable components
+│   ├── pages           # Application pages (Home, Add Zikr, Zikr Details)
+│   ├── App.tsx         # Root component with routes
+│   └── main.tsx        # Entry point
+├── index.html          # Main HTML file
+├── package.json        # Project dependencies and scripts
+├── tsconfig.json       # TypeScript configuration
+└── vite.config.ts      # Vite configuration
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Installation & Setup
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Abdalla-Elhagar/tasbee7e.git
+
+   Navigate to the project folder:
+
+2. Navigate to the project folder:
+
+cd tasbee7e
+
+3. Install dependencies:
+
+npm install
+
+4. Start the development server:
+   npm run dev
+
+## 📌 Future Improvements
+
+Add authentication for personalized azkar lists.
+
+Sync data with a backend (instead of Local Storage).
+
+Dark mode support.
+
+Sharing azkar directly via social media.
